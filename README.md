@@ -1,1 +1,1 @@
-# This is a Repository involving basic functions and operations involved in Computer Vision Using Open CV.
+# This is a Practice Repository for learning Computer Vision Using Open CV - Python.
