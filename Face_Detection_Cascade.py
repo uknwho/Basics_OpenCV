@@ -1,8 +1,9 @@
 import cv2
 
+# PreTrained classifier for face, this can be obtained in the opencv repository.
 face_cascade=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-img = cv2.imread('messi5.jpg')
+img = cv2.imread() # Use the Image, on which you want to detect the faces.
 gray= cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
 faces= face_cascade.detectMultiScale(gray,1.1,minNeighbors=4)
