@@ -1,7 +1,9 @@
+# Edge Detection using Cany Edge Method
+
 import cv2 as cv2
 from matplotlib import pyplot as plt
 
-img=cv2.imread('lena.jpg')
+img=cv2.imread('lena.jpg')  # which ever image you want to detect edges.
 img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB  )
 cany=cv2.Canny(img,100,200)
 
