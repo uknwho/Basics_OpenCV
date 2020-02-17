@@ -1,3 +1,4 @@
+#Detecting Shapes using findContours
 import cv2
 import numpy as np
 
@@ -16,13 +17,13 @@ for c in contours:
     x=approx.ravel()[0]
     y=approx.ravel()[1]
 
-    if len(approx)== 3:
+    if len(approx)== 3: #Triangle
         cv2.putText(img,"triangle",(x,y),font,0.5,(0,0,0),3)
-    elif len(approx)== 4:
+    elif len(approx)== 4: #Rectabgle
         cv2.putText(img,"rectangle",(x,y),font,0.5,(0,0,0),3)
-    elif len(approx)== 5:
+    elif len(approx)== 5: #Pentagon
         cv2.putText(img,"Pentagon",(x,y),font,0.5,(0,0,0),3)
-    elif len(approx)== 10:
+    elif len(approx)== 10: #Decagon
         cv2.putText(img,"Decagon",(x,y),font,0.5,(0,0,0),3)
     else :
         cv2.putText(img,"Circle",(x,y),font,0.5,(0,0,0),3)
