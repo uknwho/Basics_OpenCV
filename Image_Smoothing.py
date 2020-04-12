@@ -1,4 +1,7 @@
-# Smoothing an image 
+# This code illustrates different Smoothing methods for an image.
+
+#! usr/bin/env python
+
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
