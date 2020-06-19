@@ -11,6 +11,7 @@ img=cv2.imread('lena.jpg')
 img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB  )
 cany=cv2.Canny(img,100,200)
 
+# Displaying the Edges
 titles=['Image','Canny']
 images=[img,cany]
 
