@@ -9,7 +9,7 @@ img  = cv2.imread('IMAGE')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # goodFeaturesToTrack is based on HarrisCorner detector with difference in the calculation of R
-# this function takes 4 inputs the first being the grayscale image, second being max number of corners, third min quality level and the last min distances between the corners. 
+# This function takes 4 inputs the first being the grayscale image, second being max number of corners, third min quality level and the last min distances between the corners. 
 shi_corner = cv2.goodFeaturesToTrack(gray, 30, 0.01, 10)
 # The detected corners then are converted to integers
 shi_corner = np.int0(shi_corner)
