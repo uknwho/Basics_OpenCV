@@ -1,14 +1,20 @@
 ## Scale Invariant Feature Transformation
 
-The Harris Corner detector is not accurate when the scale of the image is altered. This is because of the Window which does not include the same pixcels in altered adn unaltered image.
+The Harris Corner detector is not accurate when the scale of the image is altered. 
+This is because of the Window which does not include the same pixcels in altered adn unaltered image.
 SIFT is not only resistant to scale nut also to orientation. The following are the 4 steps that occur in SIFT.
 
 Step-1 : Scale Space Extrema Detection
 
-A pyramid of images is constructed, from right to left the image is blurred and from top to bottom the images are scaled. The Degrees of Gaussians is found out, which is the subtraction of sucessive smoothedned images.
-On the DoG , the Local Extrema is searched which is a possible keypoint. This search includes 8 + 9 + 9 Pixcles, the eight surrounding the  selected pixcel and the two nines are from the above and below layer.
+A pyramid of images is constructed, from right to left the image is blurred and from top to bottom the images are scaled. 
+The Degrees of Gaussians is found out, which is the subtraction of sucessive smoothedned images.
+On the DoG , the Local Extrema is searched which is a possible keypoint. This search includes 8 + 9 + 9 Pixcles.
+The eight surrounding the  selected pixcel and the two nines are from the above and below layer.
 The standards values of sigma(smoothing index) - 1.6, octaves (height of pyramid) - 4 and the number of scale levels (width of the pyramid) - 5
 
 Step-2 : Keypoint Localization
 
-Now that, the potential keypooints are obtained the optimal keypoints should be picked. Thresholding is done to filter out the key points by two methods Contrast Threddholding for intensities and edge threshold to differ the key features from the edges using Harris corner method
+Now that, the potential keypooints are obtained the optimal keypoints should be picked. 
+Thresholding is done to filter out the key points by two methods :
+Contrast Threddholding for intensities 
+Edge threshold to differ the key features from the edges using Harris corner method
